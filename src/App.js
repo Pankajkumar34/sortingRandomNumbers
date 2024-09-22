@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Bubble } from './bubble';
+import GetName from './GetName';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='bg-slate-500 h-screen'>
+    <div className='max-w-[1140px] mx-auto'>
+    <Bubble/>
+    <GetName/>
     </div>
+    </div>
+    </>
   );
 }
 
